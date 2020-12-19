@@ -1,6 +1,11 @@
-CREATE TABLE `rooms` (
-  `roomId` int(11) PRIMARY KEY AUTOINCREMENT,
-  `number` int(11) NOT NULL,
-  `maxSeats` int(11) NOT NULL,
-  `location` varchar(45) DEFAULT NULL,
+from Cinema import DatabaseContextManager, DB_NAME
 
+
+def create_cinema_rooms_table():
+    query = """CREATE TABLE IF NOT EXISTS Rooms(
+  roomId INTEGER PRIMARY KEY AUTOINCREMENT,
+  number INTEGER NOT NULL,
+  maxSeats INTEGER NOT NULL,
+  location varchar(45) DEFAULT NULL)"""
+    with DatabaseContextManager(DB_NAME) as db:
+        db.execute(query)
