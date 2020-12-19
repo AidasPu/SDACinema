@@ -1,0 +1,24 @@
+# Let’s design a database which will store the relevant information needed to operate a cinema.
+# What kind of information do we need to store?
+# What are the different concepts a cinema needs to interact with?
+# How is that information connected?
+# What are the relationships between the different datasets?
+# What business needs and what kind of processes does the database have to satisfy?
+# Think about the process you go through when you go to a cinema or book a ticket online:
+#   ●you need to see a list of movies and the times they run,
+#   ●you need to see if there are any available seats,
+#   ●you need to be able to make a reservation for one or more seats,
+#   ●you need to be able to buy a ticket.
+
+# How would you model all this?
+
+# 1.List all movies.
+# 2.List all movies running on 2020-01-01.
+# 3.List all movies that are not yet scheduled to run in the cinema.
+# 4.List all movies reserved by John Johnson.
+# 5.List all the seat rows and numbers reserved by John Johnson.
+# 6.List all tickets sold for Joker.
+# 7.List the number of adult and children tickets sold for Joker.
+# 8.List the average number of tickets sold for each movie.
+# 9.List the highest number of tickets sold for a movie.
+# 10.List the unreserved seats for Joker.
